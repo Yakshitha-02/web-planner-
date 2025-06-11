@@ -1,0 +1,56 @@
+.diary-container {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px 16px 16px 16px;
+  animation: fadeInDiary 0.4s;
+}
+
+@keyframes fadeInDiary {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.diary-container h2 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.diary-container div {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.diary-container textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #bdbdbd;
+  min-height: 140px;
+  resize: vertical;
+  background: #f8fafc;
+  box-shadow: 0 1px 3px rgba(25, 118, 210, 0.04);
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.diary-container textarea:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 2px #1976d2;
+}
+
+.diary-container button {
+  transition: background 0.2s;
+}
+
+.diary-container button:active {
+  background: #125ea6;
+}

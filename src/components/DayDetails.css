@@ -1,0 +1,80 @@
+/* DayDetails modal styles */
+.day-details-modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInBg 0.3s;
+}
+@keyframes fadeInBg {
+  from { background: rgba(0,0,0,0); }
+  to { background: rgba(0,0,0,0.18); }
+}
+.day-details-modal > .day-details-content {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  padding: 32px 24px 24px 24px;
+  min-width: 320px;
+  max-width: 90vw;
+  animation: popIn 0.35s cubic-bezier(.68,-0.55,.27,1.55);
+  transform: scale(1);
+}
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.day-details-modal h3 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 18px;
+  animation: slideDown 0.4s;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.day-details-modal .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  animation: fadeInBtn 0.5s;
+}
+.day-details-modal .close-btn:hover {
+  background: #b71c1c;
+  transform: scale(1.1);
+}
+@keyframes fadeInBtn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.day-details-modal strong {
+  color: #1976d2;
+}
+.day-details-modal ul {
+  margin: 0 0 12px 0;
+  padding-left: 18px;
+}
+.day-details-modal li {
+  margin-bottom: 4px;
+  animation: fadeInList 0.5s;
+}
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.day-details-modal > div {
+  margin-bottom: 14px;
+}

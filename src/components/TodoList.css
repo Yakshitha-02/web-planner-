@@ -1,0 +1,71 @@
+.todo-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  animation: fadeInTodo 0.4s;
+}
+
+@keyframes fadeInTodo {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.todo-input input:focus {
+  box-shadow: 0 0 0 2px #1976d2;
+}
+
+.todo-input button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.todo-input button:active {
+  background: #125ea6;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  animation: fadeInList 0.5s;
+}
+
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.todo-list li input[type="text"] {
+  flex: 1;
+  margin: 0 8px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+.todo-list li.completed input[type="text"] {
+  text-decoration: line-through;
+  color: #888;
+}

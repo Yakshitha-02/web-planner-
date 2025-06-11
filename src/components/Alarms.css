@@ -1,0 +1,133 @@
+.alarms-container {
+  max-width: 400px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px 16px 16px 16px;
+  animation: fadeInAlarms 0.4s;
+}
+
+@keyframes fadeInAlarms {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.alarms-container h2 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #1976d2;
+  font-size: 1.5rem;
+}
+
+.alarms-container input[type="time"] {
+  padding: 6px 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.alarms-container input[type="time"]:focus {
+  box-shadow: 0 0 0 2px #1976d2;
+}
+
+.alarms-container button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.alarms-container button:hover {
+  background: #125ea6;
+}
+
+.alarms-container button:active {
+  background: #125ea6;
+}
+
+.alarms-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.alarms-container li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 8px 10px;
+  animation: fadeInList 0.5s;
+}
+
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.alarms-container span {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.day-details-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  padding: 32px 24px 24px 24px;
+  z-index: 1000;
+  min-width: 320px;
+  max-width: 90vw;
+}
+
+.day-details-modal h3 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 18px;
+}
+
+.day-details-modal .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.day-details-modal .close-btn:hover {
+  background: #b71c1c;
+}
+
+.day-details-modal strong {
+  color: #1976d2;
+}
+
+.day-details-modal ul {
+  margin: 0 0 12px 0;
+  padding-left: 18px;
+}
+
+.day-details-modal li {
+  margin-bottom: 4px;
+}
+
+.day-details-modal > div {
+  margin-bottom: 14px;
+}
