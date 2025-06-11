@@ -5,9 +5,9 @@ const getTodayKey = () => {
   return 'alarms-' + today.toISOString().slice(0, 10);
 };
 
-const getTimeString = (date) => {
-  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-};
+//const getTimeString = (date) => {
+//   return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+// };
 
 const Alarms = () => {
   const [alarms, setAlarms] = useState(() => {

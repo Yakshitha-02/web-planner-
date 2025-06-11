@@ -9,7 +9,7 @@ const Calendar = () => {
   const today = new Date();
   const [currentYear, setCurrentYear] = useState(today.getFullYear());
   const [currentMonth, setCurrentMonth] = useState(today.getMonth());
-  const [hoveredDay, setHoveredDay] = useState(null);
+  //const [hoveredDay, setHoveredDay] = useState(null);
   const [showDetails, setShowDetails] = useState(false);
   const [detailsDate, setDetailsDate] = useState('');
 

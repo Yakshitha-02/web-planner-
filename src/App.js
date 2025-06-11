@@ -5,7 +5,7 @@ import TodoList from './components/TodoList';
 import Calendar from './components/Calendar';
 import Alarms from './components/Alarms';
 import Diary from './components/Diary';
-import DayDetails from './components/DayDetails';
+//import DayDetails from './components/DayDetails';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import ProfileMenu from './components/ProfileMenu';
